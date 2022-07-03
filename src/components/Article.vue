@@ -1,12 +1,12 @@
 <template>
   <div>
-    <mavon-editor v-model="article.content" />
+    <mavon-editor
+      v-model="article.content"
+    />
   </div>
 </template>
 
 <script>
-import mavonEditor from 'mavon-editor'
-import 'mavon-editor/dist/css/index.css'
 
 export default {
   name: 'ArticleCard',
@@ -16,8 +16,8 @@ export default {
         default: null
       }
   },
-  components:{
-    mavonEditor
-  }
 }
 </script>
+
+<style>
+</style>
